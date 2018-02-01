@@ -12,7 +12,7 @@ FROM alpine:latest
 RUN apk add --no-cache ca-certificates
 COPY --from=builder /go-ethereum/build/bin/geth /usr/local/bin/
 
-VOLUME ["/opt/ethereum-go"]
+VOLUME ["/opt/go-ethereum"]
 
 EXPOSE 8545 8546 30303 30303/udp 30304/udp
-CMD ["geth", "--conf /opt/ethereum-go/config.toml"]
+CMD ["geth", "--rpc", "--dev", "--rpcport=8545"]
