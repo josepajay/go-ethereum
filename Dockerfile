@@ -15,4 +15,4 @@ COPY --from=builder /go-ethereum/build/bin/geth /usr/local/bin/
 VOLUME ["/opt/go-ethereum"]
 
 EXPOSE 8545 8546 30303 30303/udp 30304/udp
-CMD ["geth", "--rpc", "--dev", "--rpcport=8545"]
+ENTRYPOINT ["geth"]
