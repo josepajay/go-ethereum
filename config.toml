@@ -9,7 +9,7 @@ GasPrice = 18000000000
 EthashCacheDir = "ethash"
 EthashCachesInMem = 2
 EthashCachesOnDisk = 3
-EthashDatasetDir = "/Users/ajay/.ethash"
+EthashDatasetDir = "/opt/go-ethereum/.ethash"
 EthashDatasetsInMem = 1
 EthashDatasetsOnDisk = 2
 EnablePreimageRecording = false
@@ -35,9 +35,9 @@ MaxMessageSize = 1048576
 MinimumAcceptedPOW = 2e-01
 
 [Node]
-DataDir = "/Users/ajay/Library/Ethereum/testnet"
+DataDir = "/opt/go-ethereum/Library/Ethereum/testnet"
 IPCPath = "geth.ipc"
-HTTPHost = "127.0.0.1"
+HTTPHost = "0.0.0.0"
 HTTPPort = 8545
 HTTPModules = ["net", "web3", "eth", "shh"]
 WSPort = 8546
